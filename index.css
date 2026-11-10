@@ -1,0 +1,633 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: clip;
+}
+.nav-logo img{
+    width:50%;
+   
+}
+.nav-container{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    background-color:#c49a45;
+    box-shadow: 0 15px 15px rgba(0, 0,0, 0.4);
+    position:fixed;
+    width:100%;
+    z-index: 100;
+}
+.nav-links{
+    margin: auto;
+}
+.nav-links ul{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    margin: auto;
+    gap:60px;
+}
+.nav-links a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:white;
+}
+.nav-links a:hover{
+    border-bottom:3px solid white;
+}
+.nav-actions{
+    display: flex;
+    justify-content: end;
+    padding: 20px 30px;
+    gap:20px;
+    
+}
+.sign{
+    padding:10px 20px;
+    background-color:mintcream;
+    border-radius: 10px;
+}
+.sign a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sign:hover{
+    background-color: #123d39;
+    transition:0.3s;
+}
+.login a{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login{
+    padding: 10px 20px;
+    background-color: mintcream;
+    border-radius: 10px;
+}
+.login:hover{
+      background-color: #123d39;
+      transition:0.3s;
+}
+.nav-actions a{
+    padding: 10px 20px;
+    text-decoration: none;
+}
+/*end nav-bar of the webpage*/
+.background-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:90%;
+    object-fit: cover;
+}
+.hero-description1{
+    position: relative;
+    z-index:20;
+    text-align: center;
+    top:200px;
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:50px;
+}
+.location{
+    position:relative;
+    top: 180px;
+    left: 20%;
+}
+.location label{
+    display: block;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.location input{
+    width:60.5%;
+    padding: 10px 30px;
+    outline: none;
+}
+.parent2{
+    position:relative;
+    display: flex;
+    top:200px;
+    gap: 40px;
+    left:20%;
+}
+.parent2 label{
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.parent2 select{
+    width:227px;
+    padding: 10px 20px;
+}
+.pick{
+    padding:20px 30px;
+   
+}
+.search2{
+    position: relative;
+    justify-content: space-between;
+    justify-content: space-around;
+    width:62%;
+    gap:650px;
+    top:250px;
+    left: 330px;
+}
+.more a{
+    text-decoration:none;
+    font-size: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.search1 a{
+    text-decoration: none;
+    padding: 10px 60px;
+    background-color:#C49A45;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.search1 a:hover{
+    background-color: #123d39;
+}
+.hero {
+    position: relative;
+    height: 100vh;
+}
+/*discription*/
+.howard{
+    display: flex;
+    justify-content: center;
+    gap: 600px;
+    padding:20px 30px;
+    background-color:#E8DCC4;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.4);
+    width: fit-content;
+    margin: auto;
+}
+.hanna{
+    display: flex;
+    gap: 20px;
+}
+.hanna h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+.dropdown{
+    position:relative;
+    display: inline-block;
+}
+.prequal-btn{
+    background-color: #C49A45;
+    color:white;
+    font-size:15px;
+    padding: 10px 5px;
+    font-size:18px;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color:white;
+    width:200px;
+    list-style:none;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+    z-index:10;
+    padding:10px 20px;
+    height:350px;
+}
+.dropdown-menu li a{
+    display: block;
+    padding: 10px 5px;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+}
+.dropdown-menu li a:hover{
+    background-color:#f2f2f2;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.cards {
+    display: flex;
+    text-align: center;
+    margin-top: 70px;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+.BUY img{
+    width: 50%;
+}
+.BUY p{
+    width: 400px;
+    font-size: 20px;
+    color:black;
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.BUY:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.BUY{
+    line-height:2;
+    height:70vh;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 20px;
+    background-color:white;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.4);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    flex-direction: column;
+}
+.BUY a{
+    text-decoration: none;
+    font-size:25px;
+    border:1px solid #E8DCC4;
+    border-radius: 20px;
+    padding: 10px 10px;
+    color:#c49a45;
+}
+.RENT a{
+    height:70vh;
+    text-decoration: none;
+    font-size:25px;
+    border:1px solid #E8DCC4;
+    border-radius: 20px;
+    padding: 10px 10px;
+    color: #c49445;
+}
+.RENT img{
+    width:50%;
+}
+.RENT p{
+    width: 400px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+}
+.RENT{
+    line-height: 2;
+    text-align: center;
+    background-color:white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.4);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    flex-direction: column;
+}
+.RENT:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.SELL{
+    height:70vh;
+    line-height:1.8;
+    text-align: center;
+    background-color:white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-direction: column;
+}
+.SELL a{
+    text-decoration: none;
+    font-size:25px;
+    border:1px solid #E8DCC4;
+    border-radius: 20px;
+    padding: 10px 10px;
+    line-height:3;
+    color:#C49A45;
+}
+.SELL:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.SELL p{
+    width: 400px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+}
+.SELL img{
+    width: 50%;
+}
+.we{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-top: 60px;
+}
+.easy{
+    color: #c49445;
+}
+.information{
+    width:990px;
+    margin-top: 60px;
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    z-index: 20;
+    line-height:1.6;
+}
+.image{
+    margin-top: 30px;
+    position:absolute;
+}
+.image img{
+    width: 1800px;
+    height: 80vh;
+}
+.hero-description{
+    position: relative;
+    top:180px;
+    background-color: white;
+    width:55%;
+    align-items: center;
+    padding: 20px 30px;
+    margin: auto;
+}
+.Featured{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #123F36;
+}
+.North h1{
+    font-size: 60px;
+    color: #123d39;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hero-description p{
+    font-size:18px;
+    width:100%;
+    margin-top:20px;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 2;
+}
+.hero-description a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #123d39;
+}
+.hero-description a:hover{
+    color:red;
+}
+.hero-section{
+    position: relative;
+    overflow: hidden;
+    height: 80vh;
+}
+.Exclusive{
+    text-align: center;
+    margin-top: 60px;
+}
+.Exclusive h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color:#2A6B5C;
+}
+.Exclusive p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    margin-top: 20px;
+}
+.luxury{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.property-card{
+    width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.property-card:hover{
+    transform:scale(0.9);
+}
+.image-container{
+    position:relative;
+    height:320px;
+}
+.image-container img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.price{
+    position:absolute;
+    bottom:15px;
+    left:15px;
+    color: white;
+    font-size:20px;
+    background:rgba(0, 0, 0, 0.4);
+    padding:5px 8px;
+    border-radius:5px;
+}
+.status{
+    position:absolute;
+    top: 15px;
+    left: 15px;
+    background:#63b98b;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    font-size:20px;
+}
+.property-info{
+    padding: 20px;
+}
+.property-info h3{
+    margin: 0 0 12px;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.property-info p{
+    margin: 0 0 12px;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.location2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
+    font-size: 15px;
+}
+.agent{
+    display: flex;
+    gap: 30px;
+}
+.agent span{
+    font-size: 20px;
+}
+.agent button{
+    width:40px;
+    height:40px;
+    border: none;
+    border-radius:50%;
+    cursor: pointer;
+    color: white;
+}
+.featured2{
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+.afford{
+    text-align: center;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:30px;
+    color: #2A6B5C;
+}
+.Frequently{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+}
+.ask{
+    text-align: center;
+    margin: auto;
+}
+.ask input{
+    margin-top: 20px;
+    padding:10px 30px;
+    width:30%;
+    outline: none;
+    border-radius: 30px;
+    border: 2px solid white;
+    box-shadow: 0 15px 15px rgba(0, 0,0,0.8);
+}
+.ask2 p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+.ask input:hover{
+    box-shadow:pink;
+    transition: 0.4;
+}
+/*futter of website*/
+.icon7 img{
+    width:20%;
+}
+.safjim{
+    color: white;
+}
+.futter{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    background-color:black;
+    border: 1px solid black;
+}
+.united{
+    background-color:black;
+    border: 1px solid #6b3030;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+.real p{
+     color: white;
+     width: 250px;
+     font-size:20px;
+}
+.icon7 img{
+    width:15%;
+    background-color: #ffc44d;
+    border-radius: 20px;
+}
+.safjim {
+    width:400px;
+}
+.safjim p{
+    font-size:20px;
+    width:90%;
+}
+.state{
+    color: #ffc44d;
+}
+.real{
+    width:20%;
+}
+.sociamedia img{
+    justify-content:space-between;
+}
+.explore ul li{
+    list-style: none;
+    margin: 10px;
+    font-size: 25px;
+    color: white;
+}
+.explore ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+}
+.Dashboard ul li{
+      list-style: none;
+      margin: 10px;
+      font-size: 25px;
+      color: white;
+}
+.Developer ul li a{
+    text-decoration: none;
+    font-size:20px;
+    color:white;
+}
+.Developer ul li{
+    list-style:none;
+    font-size:25px;
+    margin: 20px;
+    color: white;
+}
+.social{
+    display: flex;
+    gap: 20px;
+}
+.Dashboard ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+}
+.Company ul li{
+    list-style:none;
+    font-size:25px;
+    margin: 20px;
+    color: white;
+}
+.Company ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+hr{
+    color:#123d39;
+}
+.reserved{
+    font-size: 20px;
+    color: white;
+}
+.list2 ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 20px;
+}
+.list2 a{
+    text-decoration: none;
+    color:white;
+}
